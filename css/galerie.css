@@ -1,0 +1,202 @@
+/* Initialisation (variable + reset) */
+
+:root {
+    /* Couleurs */
+    --pop-color1: #FF5964;
+    --transparent-pop1: #FF596470;
+
+    --pop-color2: #16697a;
+    --transparent-pop2: #16697A70;
+
+    --light-color: #E5E5E5;
+    --dark-color: black;
+    --bg-color: #c7c7c7;
+
+    /* Fonts */
+    --logo-font: "delittle-chromatic", sans-serif;
+    --main-font: "montserrat", sans-serif;
+    ;
+    --title-font: "ofelia-text", sans-serif;
+}
+
+/* Reset navigateur */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-family: var(--main-font);
+}
+
+/* ********************************** */
+
+/* Intro */
+
+#bg-intro {
+    height: 100vh;
+    width: 100%;
+
+    background-image: url("../images/galerie/adopt-cat.jpeg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+}
+
+.encadre {
+    background-color: var(--transparent-pop1);
+
+    width: 900px;
+    height: 360px;
+
+    margin-top: 12%;
+    padding: 50px;
+
+    text-align: center;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center; */
+}
+
+.titreSection {
+    /* background-color: red; */
+
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    font-size: 4em;
+
+    color: var(--light-color);
+}
+
+.content-encadre {
+    /* background-color: red; */
+
+    height: 200px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.content-encadre .para {
+    padding: 20px 0;
+
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+
+    color: var(--light-color);
+}
+
+.content-encadre .btn {
+    background-color: var(--dark-color);
+
+    margin: 0 10px;
+    padding: 20px;
+
+    font-family: var(--title-font);
+    font-size: 20px;
+    color: var(--light-color);
+
+    border-radius: 10px;
+    border: 2px solid var(--pop-color1);
+}
+
+.content-encadre .btn:hover {
+    background-color: var(--pop-color2);
+    border: 2px solid var(--dark-color);
+
+}
+
+
+/* Galerie */
+
+.titre-galerie{
+    padding-top: 50px;
+
+    text-align: center;
+    font-family: var(--title-font);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.galerie{
+    /* background-color: red; */
+
+    width: 100%;
+
+    padding: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.galerie figure{
+    margin: 20px;
+}
+
+.galerie figure img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.galerie .chat figure img{
+    border: 4px solid var(--pop-color2);
+}
+
+.galerie .chat figure img{
+    border: 4px solid var(--pop-color1);
+}
+
+.galerie figure figcaption {
+    text-align: center;
+
+    font-size: 30px;
+}
+
+
+
+
+/* Condition d'adoption */
+
+#condition {
+    background-color: var(--bg-color);
+
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#condition .grp-condition {
+    width: 250px;
+
+    margin: 0px 50px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#condition .grp-condition h3{
+    padding: 10px;
+
+    font-family: var(--title-font);
+}
+
+#condition .grp-condition p {
+    text-align: justify;
+
+    font-family: var(--main-font);
+}

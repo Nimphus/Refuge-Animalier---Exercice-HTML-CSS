@@ -1,0 +1,216 @@
+/* Initialisation (variable + reset) */
+
+:root {
+    /* Couleurs */
+    --pop-color1: #FF5964;
+    --transparent-pop1: #FF596470;
+
+    --pop-color2: #16697a;
+    --transparent-pop2: #16697A70;
+
+    --light-color: #E5E5E5;
+    --dark-color: black;
+    --bg-color: #c7c7c7;
+
+    /* Fonts */
+    --logo-font: "delittle-chromatic", sans-serif;
+    --main-font: "montserrat", sans-serif;
+    ;
+    --title-font: "ofelia-text", sans-serif;
+}
+
+/* Reset navigateur */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-family: var(--main-font);
+}
+
+/* ********************************** */
+
+/* Intro */
+
+#bg-don {
+    height: 100vh;
+    width: 100%;
+
+    background-image: url("../images/aide/adopt-dog.jpeg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+}
+
+.encadre {
+    background-color: var(--transparent-pop1);
+
+    width: 800px;
+    height: 500px;
+
+    margin-top: 7%;
+    padding: 50px;
+
+    text-align: center;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center; */
+}
+
+.titreSection {
+    /* background-color: red; */
+
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    font-size: 3em;
+
+    color: var(--light-color);
+}
+
+.encadre .para {
+    padding: 20px 0;
+
+    text-align: justify;
+
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+
+    color: var(--light-color);
+}
+
+/* Formulaires */
+
+.sectionForm{
+    display: flex;
+}
+
+.form{
+    background-color: var(--pop-color2);
+
+    width: 50%;
+
+    margin: 50px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 4px solid var(--dark-color);
+}
+
+.titreForm{
+    padding: 20px 50px;
+
+    text-align: center;
+
+    font-family: var(--title-font);
+    font-size: 3em;
+
+}
+
+.form .form-content {
+    display: flex;
+}
+
+.form .form-content .droite {
+    margin-left: 20px;
+}
+
+.form .grp-input{
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form .grp-input label{
+    margin-bottom: 5px;
+
+    font-family: var(--main-font);
+}
+
+.form .grp-input input+select {
+    margin-top: 5px;
+    padding: 5px;
+    
+    border: 2px solid var(--dark-color);
+    outline: none;
+}
+
+.form .grp-input textarea {
+    width: 100%;
+    height: 100px;
+
+    margin-top: 10px;
+    padding: 5px;
+
+    border: 2px solid var(--dark-color);
+    outline: none;
+
+    resize: none;
+}
+
+.btn-validation{
+    background-color: var(--dark-color);
+    
+    margin-top: 15px;
+    padding: 15px 15px 10px 15px;
+
+    font-family: var(--title-font);
+    color: var(--light-color);
+
+    border: 2px solid var(--light-color);
+    border-radius: 20px;
+}
+
+.btn-validation:hover{
+    background-color: var(--light-color);
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
+}
+
+/* Condition d'adoption */
+
+#condition {
+    background-color: var(--bg-color);
+
+    margin-top: 50px;
+
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#condition .grp-condition {
+    width: 250px;
+
+    margin: 0px 50px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#condition .grp-condition h3{
+    padding: 10px;
+
+    font-family: var(--title-font);
+}
+
+#condition .grp-condition p {
+    text-align: justify;
+
+    font-family: var(--main-font);
+}
