@@ -1,9 +1,11 @@
 <?php
 
-// $prenom($_POST["sPrenomBenevole"])
-// $nom($_POST["sNomBenevole"])
-// $email($_POST["sEmailBenevole"])
-// $jourDispo($_POST["sJourDispoBenevole"])
+$prenom=$_POST["sPrenomBenevole"];
+$nom=$_POST["sNomBenevole"];
+$email=$_POST["sEmailBenevole"];
+
+// Problème récupération checkbox (Récupérer données dans un tableau ?)
+$jourDispo=$_POST["sJourDispoBenevole"]
 
 
 ?>
@@ -15,19 +17,19 @@
 </head>
 <body>
 
-    <span>Prénom : <?=$_POST["sPrenomBenevole"]?>
+    <span>Prénom : <?=$prenom?>
     </span>
     <br>
 
-    <span>Nom : <?=$_POST["sNomBenevole"]?>
+    <span>Nom : <?=$nom?>
     </span>
     <br>
 
-    <span>Email : <?=$_POST["sEmailBenevole"]?>
+    <span>Email : <?=$email?>
     </span>
     <br>
 
-    <span>Jours de disponibilité : <?=$_POST["sJourDispoBenevole"]?>
+    <span>Jours de disponibilité : <?=$jourDispo?>
     </span>
 
 </body>

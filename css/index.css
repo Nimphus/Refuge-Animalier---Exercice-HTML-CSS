@@ -138,11 +138,8 @@ main {
 }
 
 #presentation h2{
-    display: inline-block;
-
     font-family: var(--title-font);
     font-size: 50px;
-    color: #16697a;
 }
 
 #content-presentation {

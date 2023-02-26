@@ -33,7 +33,7 @@
         <section id="chien">
             <h3 class="titre-galerie">Les chiens</h3>
             <div class="galerie chien">
-            
+
                 <div class="grp-galerie">
                     <a class="lien_galerie" href="page_animal.php">
                         <figure>
@@ -99,7 +99,7 @@
 
             <h3 class="titre-galerie">Les Chats</h3>
             <div class="galerie chat">
-                
+
                 <div class="grp-galerie">
                     <a class="lien_galerie" href="page_animal.php">
                         <figure>

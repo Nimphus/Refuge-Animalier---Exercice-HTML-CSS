@@ -1,3 +1,19 @@
+<?php
+
+// Initialisation des variables & tableaux
+
+    $jour=[
+        0=>"Lundi",
+        1=>"Mardi",
+        2=>"Mercredi",
+        3=>"Jeudi",
+        4=>"Vendredi",
+        5=>"Samedi"
+    ];
+
+
+?>
+
 <!-- Insertion de l'entete HTML -->
 <?php include_once("commun/entete.php");?>
 <body>
@@ -68,7 +84,21 @@
                                 <fieldset>
                                     <legend>Vos jours de disponibilités</legend>
 
+                                    <!-- Boucle Foreach - Jours disponibilités -->
+                                    <?php
+                                        foreach($jour as $enrg){
+                                    ?>
+
                                     <div>
+                                        <label for="<?=enrg?>"><?=enrg?></label>
+                                        <input type="checkbox" name="sJourDispoBenevole" id="<?=enrg?>" value="<?=enrg?>">
+                                    </div>
+
+                                    <?php
+                                    }
+                                    ?>
+
+                                    <!-- <div>
                                         <label for="lundi">Lundi</label>
                                         <input type="checkbox" name="sJourDispoBenevole" id="lundi" value="Lundi">
                                     </div>
@@ -90,7 +120,7 @@
                                     <div>
                                         <label for="samedi">Samedi</label>
                                         <input type="checkbox" name="sJourDispoBenevole" id="samedi" value="Samedi">
-                                    </div>
+                                    </div> -->
 
                                 </fieldset>
                             </div>
@@ -99,7 +129,7 @@
                                 <label for="message"></label>
                                 <textarea name="message" id="message" cols="30" rows="10"
                                     placeholder="Votre message"></textarea>
-                            </div> .
+                            </div>
 
                         </div>
 
@@ -143,8 +173,7 @@
 
                             <div class="grp-input">
                                 <label for="message_don"></label>
-                                <textarea name="message" id="message_don" cols="30" rows="10"
-                                    placeholder="Votre message"></textarea>
+                                <textarea name="message" id="message_don" placeholder="Votre message"></textarea>
                             </div>
 
                         </div>

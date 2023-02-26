@@ -1,3 +1,20 @@
+<?php
+
+// Initialisation des variables & tableaux
+
+    $jour=[
+        0=>"Lundi",
+        1=>"Mardi",
+        2=>"Mercredi",
+        3=>"Jeudi",
+        4=>"Vendredi",
+        5=>"Samedi"
+    ];
+
+
+?>
+
+
 <!-- Insertion de l'entete HTML -->
 <?php include_once("html/commun/entete.php");?>
 <body>
@@ -101,8 +118,7 @@
 
                             <div class="grp-input">
                                 <label for="message"></label>
-                                <textarea name="message" id="message" cols="30" rows="10"
-                                    placeholder="Laissez nous un message"></textarea>
+                                <textarea name="message" id="message" focus placeholder="Laissez nous un message"></textarea>
                             </div>
 
                             <button id="btn-validation">Valider</button>
@@ -113,12 +129,28 @@
                 </div>
 
 
+
                 <div class="widget w2">
                     <h3>Nous rendre visite</h3>
                     <div class="separation"></div>
 
                     <div id="horaire">
-                        <span>Lundi
+
+                        <!-- Boucle Foreach - Horaires -->
+                        <?php
+                            foreach($jour as $enrg){
+                        ?>
+
+                        <span><?=$enrg?>
+                            <time datetime="08:00">8:00</time>
+                            <time datetime="16:00">16:00</time>
+                        </span>
+
+                        <?php
+                        }
+                        ?>
+
+                        <!-- <span>Lundi
                             <time datetime="08:00">8:00</time>
                             <time datetime="16:00">16:00</time>
                         </span>
@@ -146,7 +178,7 @@
                         <span>Samedi
                             <time datetime="08:00">8:00</time>
                             <time datetime="12:00">16:00</time>
-                        </span>
+                        </span> -->
 
                         <span>Dimanche</span>
                         <span class="no-padding">Fermé au public</span>
