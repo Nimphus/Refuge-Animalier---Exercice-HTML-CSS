@@ -14,7 +14,6 @@
 
 ?>
 
-
 <!-- Insertion de l'entete HTML -->
 <?php include_once("html/commun/entete.php");?>
 <body>
@@ -38,7 +37,7 @@
 
                     <!-- Boutons adoption chiens | chats -->
                     <a class="btn-adopt" href="html/galerie.php#chien">Adopter un chien</a>
-                    <a class="btn-adopt" href="html/galerie.php#chats">Adopter un chat</a>
+                    <a class="btn-adopt" href="html/galerie.php#chat">Adopter un chat</a>
                 </div>
 
             </section>
@@ -48,9 +47,9 @@
         <!-- Section - Présentation du refuge -->
         <section id="presentation">
 
-            <h2>Présentation</h2>
-
             <div id="content-presentation">
+
+                <h2>Présentation</h2>
 
                 <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, saepe assumenda! Cum amet
                     illum beatae
@@ -98,22 +97,22 @@
 
                             <div class="grp-input">
                                 <label for="name">Prénom</label>
-                                <input type="text" id="name">
+                                <input type="text" id="name" required>
                             </div>
 
                             <div class="grp-input">
                                 <label for="surname">Nom</label>
-                                <input type="text" id="surname">
+                                <input type="text" id="surname" required>
                             </div>
 
                             <div class="grp-input">
                                 <label for="email">Adresse e-mail</label>
-                                <input type="email" name="email-emmeteur" id="email">
+                                <input type="email" name="email-emmeteur" id="email" required>
                             </div>
 
                             <div class="grp-input">
                                 <label for="donnation">Don</label>
-                                <input type="number" name="don" id="donnation" value="10" min="1">
+                                <input type="number" name="don" id="donnation" value="10" min="1" required>
                             </div>
 
                             <div class="grp-input">

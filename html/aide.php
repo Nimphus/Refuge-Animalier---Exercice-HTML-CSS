@@ -23,8 +23,8 @@
     <main>
 
         <figure id="bg-don">
-            <section class="encadre">
-                <h2 class="titreSection">Comment nous venir en aide ?</h2>
+            <section class="encadre aide">
+                <h2 class="titreSection aide">Comment nous venir en aide ?</h2>
                 <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam similique, repudiandae
                     aspernatur odio
                     possimus dolore nam est sapiente doloremque praesentium sint consequuntur suscipit placeat, iste,
@@ -59,17 +59,17 @@
 
                             <div class="grp-input">
                                 <label for="prenom_benevole">Prénom</label>
-                                <input type="text" id="prenom_benevole" name="sPrenomBenevole">
+                                <input type="text" id="prenom_benevole" name="sPrenomBenevole" required>
                             </div>
 
                             <div class="grp-input">
                                 <label for="nom_benevole">Nom</label>
-                                <input type="text" id="nom_benevole" name="sNomBenevole">
+                                <input type="text" id="nom_benevole" name="sNomBenevole" required>
                             </div>
 
                             <div class="grp-input">
                                 <label for="email_benevole">Adresse e-mail</label>
-                                <input type="email" name="sEmailBenevole" id="email_benevole">
+                                <input type="email" name="sEmailBenevole" id="email_benevole" required>
                             </div>
 
                             <button type="submit" class="btn-validation">Valider</button>
@@ -84,21 +84,7 @@
                                 <fieldset>
                                     <legend>Vos jours de disponibilités</legend>
 
-                                    <!-- Boucle Foreach - Jours disponibilités -->
-                                    <?php
-                                        foreach($jour as $enrg){
-                                    ?>
-
                                     <div>
-                                        <label for="<?=enrg?>"><?=enrg?></label>
-                                        <input type="checkbox" name="sJourDispoBenevole" id="<?=enrg?>" value="<?=enrg?>">
-                                    </div>
-
-                                    <?php
-                                    }
-                                    ?>
-
-                                    <!-- <div>
                                         <label for="lundi">Lundi</label>
                                         <input type="checkbox" name="sJourDispoBenevole" id="lundi" value="Lundi">
                                     </div>
@@ -120,7 +106,7 @@
                                     <div>
                                         <label for="samedi">Samedi</label>
                                         <input type="checkbox" name="sJourDispoBenevole" id="samedi" value="Samedi">
-                                    </div> -->
+                                    </div>
 
                                 </fieldset>
                             </div>
@@ -149,17 +135,17 @@
 
                             <div class="grp-input">
                                 <label for="name">Prénom</label>
-                                <input type="text" id="name">
+                                <input type="text" id="name" required>
                             </div>
 
                             <div class="grp-input">
                                 <label for="surname">Nom</label>
-                                <input type="text" id="surname">
+                                <input type="text" id="surname" required>
                             </div>
 
                             <div class="grp-input">
                                 <label for="email">Adresse e-mail</label>
-                                <input type="email" name="email-emmeteur" id="email">
+                                <input type="email" name="email-emmeteur" id="email" required>
                             </div>
 
                         </div>
@@ -168,7 +154,7 @@
 
                             <div class="grp-input">
                                 <label for="don">Don</label>
-                                <input type="number" name="don" id="don" value="10" min="1">
+                                <input type="number" name="don" id="don" value="10" min="1" required>
                             </div>
 
                             <div class="grp-input">

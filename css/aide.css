@@ -46,7 +46,7 @@
     justify-content: center;
 }
 
-.encadre {
+.encadre.aide {
     background-color: var(--transparent-pop1);
 
     width: 800px;
@@ -63,7 +63,7 @@
     justify-content: center; */
 }
 
-.titreSection {
+.titreSection.aide {
     /* background-color: red; */
 
     font-family: var(--title-font);
@@ -73,7 +73,7 @@
     color: var(--light-color);
 }
 
-.encadre .para {
+.encadre.aide .para {
     padding: 20px 0;
 
     text-align: justify;

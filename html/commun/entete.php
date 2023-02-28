@@ -7,12 +7,13 @@
 
     <!-- Feuilles de style -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="../css/aide.css">
-    <link rel="stylesheet" href="../css/galerie.css">
-    <link rel="stylesheet" href="../css/page_animal.css">
 
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="../css/header.css">
+
+    <link rel="stylesheet" href="../css/aide.css">
+    <link rel="stylesheet" href="../css/galerie.css">
+    <link rel="stylesheet" href="../css/page_animal.css">
 
     <!-- Bibliothèque font -->
     <link rel="stylesheet" href="https://use.typekit.net/wje3fnt.css">

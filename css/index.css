@@ -137,23 +137,26 @@ main {
     align-items: center;
 }
 
-#presentation h2{
-    font-family: var(--title-font);
-    font-size: 50px;
-}
-
 #content-presentation {
     /* background-color: var(--pop-color2); */
 
     width: 500px;
     height: 400px;
 
-    padding: 20px;
+    padding: 0 20px;
 
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
 }
+
+#presentation h2{
+    padding-bottom: 20px;
+
+    font-family: var(--title-font);
+    font-size: 50px;
+}
+
 
 
 /* Condition d'adoption */

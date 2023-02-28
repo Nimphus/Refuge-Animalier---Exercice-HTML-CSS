@@ -1,7 +1,7 @@
 <!-- -------- Bannière du site --------  -->
 <header id="banniere">
 
-<a id="lienTitre" href="index.html">
+<a id="lienTitre" href="../index.php">
     <h1>Le Refuge</h1>
 </a>
 

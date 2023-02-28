@@ -148,11 +148,11 @@
     border-radius: 10px;
 }
 
-.galerie .chat figure img{
+.galerie.chat figure img{
     border: 4px solid var(--pop-color2);
 }
 
-.galerie .chat figure img{
+.galerie.chien figure img{
     border: 4px solid var(--pop-color1);
 }
 

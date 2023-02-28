@@ -95,7 +95,7 @@
 
         <!-- Chats -->
 
-        <section id="chats">
+        <section id="chat">
 
             <h3 class="titre-galerie">Les Chats</h3>
             <div class="galerie chat">
